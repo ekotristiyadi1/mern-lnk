@@ -1,4 +1,4 @@
-# BDockerize BE & FE MERN
+# Dockerize BE & FE MERN
 
 # SETUP BE
 
