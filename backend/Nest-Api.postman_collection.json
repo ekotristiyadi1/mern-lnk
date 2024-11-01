@@ -1,0 +1,712 @@
+{
+	"info": {
+		"_postman_id": "e3e1b769-12a8-4e0c-9740-6921e9fb97cb",
+		"name": "Nest-Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication & Authorization",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"eko\",\n  \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMWUzMjU5OGItYzBkZi00NWYxLTg3MzQtYTU3MzlkOTE0OTdkIiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6IjFlMzI1OThiLWMwZGYtNDVmMS04NzM0LWE1NzM5ZDkxNDk3ZCIsImlhdCI6MTcwNDUxMDM4NywiZXhwIjoxNzA0NjgzMTg3fQ.5j0nEUrrpoFsAb4BVea69ovUOGy9PtLXPZ9h_WPG39c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMWUzMjU5OGItYzBkZi00NWYxLTg3MzQtYTU3MzlkOTE0OTdkIiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDVUMjM6MTk6MjkuNjI3WiIsImRlbGV0ZWRBdCI6bnVsbH0sImlhdCI6MTcwNDUxMDA1MywiZXhwIjoxNzA0NjgyODUzfQ.n80H4-PphTp6iZzytG8MYTJcgqZF8NPXmQt_q_pdjxA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/refreshToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"refreshToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout/Revoke Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"eko\",\n  \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"fadjrin\",\n  \"email\": \"fadjrin@gmail.com\",\n  \"password\": \"admin123\",\n  \"roleId\": \"2e2d1857-b6ab-4882-8d41-567918562c18\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Management",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"fadjrin2\",\n  \"email\": \"fadjrin2@gmail.com\",\n  \"password\": \"admin123\",\n  \"roleId\": \"2e2d1857-b6ab-4882-8d41-567918562c18\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users/a50e9178-be58-4bb7-8c5d-3a9e756fc46e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"a50e9178-be58-4bb7-8c5d-3a9e756fc46e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"fadjrin2\",\n  \"email\": \"fadjrin2@gmail.com\",\n  \"password\": \"admin123\",\n  \"roleId\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Permissions",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/permissions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"fadjrin2\",\n  \"email\": \"fadjrin2@gmail.com\",\n  \"password\": \"admin123\",\n  \"roleId\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiZDVhODkyNjUtZmQyYS00NzkzLTljMjAtODZiNTlmNDg4YjA4IiwidXNlcm5hbWUiOiJla28iLCJlbWFpbCI6ImVrb0B0cmltb2dvLmNvbSIsInJvbGVJZCI6IjEiLCJ2ZXJpZmllZF9hdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImNyZWF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsInVwZGF0ZWRBdCI6IjIwMjQtMDEtMDZUMDU6MDQ6MzAuNDMyWiIsImRlbGV0ZWRBdCI6bnVsbH0sInN1YiI6ImQ1YTg5MjY1LWZkMmEtNDc5My05YzIwLTg2YjU5ZjQ4OGIwOCIsImlhdCI6MTcwNDUxNzc0OCwiZXhwIjoxNzA0NjkwNTQ4fQ.8HvZ41uK8R9HnuuldywAfZUmev1bbZEVGS5TfQz1yHk",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
